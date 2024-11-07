@@ -6,8 +6,8 @@ import com.service.apirestful.product.product_service.model.dto.ProductResponse;
 import com.service.apirestful.product.product_service.model.entity.Product;
 import com.service.apirestful.product.product_service.repository.CategoryRepository;
 import com.service.apirestful.product.product_service.repository.ProductRepository;
-import exception.CategoryNotFoundException;
-import exception.ProductNotFoundException;
+import com.service.apirestful.product.product_service.exception.CategoryNotFoundException;
+import com.service.apirestful.product.product_service.exception.ProductNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package exception;
+package com.service.apirestful.product.product_service.exception;
 
 public class CategoryNotFoundException extends RuntimeException{
 }
