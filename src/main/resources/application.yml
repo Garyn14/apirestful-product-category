@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: product-service
+  jackson:
+    default-property-inclusion: non_null # ignore null properties in all json response = @JsonInclude(JsonInclude.Include.NON_NULL)
+    property-naming-strategy: SNAKE_CASE # transform to snake case the json result
+  datasource:
+    url: jdbc:mysql://localhost:3306/products_db
+    username: ${DB_USERNAME_MYSQL}
+    password: ${DB_PASSWORD_MYSQL}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
